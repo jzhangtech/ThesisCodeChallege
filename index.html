@@ -46,7 +46,7 @@
         display: flex;
     }
     .main-content{
-        min-height: calc(100vh - 110px);
+        min-height: calc(100vh - 115px);
         justify-content: center;
         -webkit-justify-content: center;
         flex-direction: column;
@@ -150,7 +150,7 @@
     }
 
     /*mobile*/
-    @media (max-width: 1024px) {
+    @media (max-width: 812px) {
         .mobile-block{
             display: block;
         }
@@ -163,6 +163,33 @@
             padding: 0;
             width: 100%;
             margin-top: 15px;
+        }
+        nav{
+            display: none;
+        }
+        body{
+            padding: 15px;
+        }
+        .caption{
+            display: none;
+        }
+        h1{
+            font-size: 1.5em;
+        }
+        footer li{
+            padding: 0 10px;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+        .main-content{
+            min-height: calc(100vh - 125px);
+        }
+        footer{
+            text-align: center;
+        }
+        .footer-menu{
+            justify-content: center;
+            -webkit-justify-content: center;
         }
     }
 
@@ -240,10 +267,10 @@
             </section>
         </div>
     </div>
-    <footer class="flex-box">
+    <footer class="flex-box mobile-block">
         <div class="txt-sm">&copy; 2016 Stamp, All Rights Reserved</div>
-        <div>
-            <ul class="flex-box">
+        <div class="menu">
+            <ul class="flex-box footer-menu">
                 <li>
                     <a href="/Contact">Contact</a>
                 </li>
