@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+</head>
+<style>
+    html{
+        color: white;
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+    }
+    body{
+        padding: 20px 50px;
+        margin: 0;
+        background-image: url('https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg');
+    }
+    header{
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        padding: 15px;
+    }
+    .flex-box{
+        display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+        display: -ms-flexbox;  /* TWEENER - IE 10 */
+        display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+        display: flex;
+    }
+    .main-content{
+        min-height: calc(100vh - 110px);
+        justify-content: center;
+        -webkit-justify-content: center;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+    }
+    .left-content{
+        padding: 5px 10%;
+        width: 50%;
+    }
+    .right-content{
+        width: 50%;
+        text-align: center;
+        padding: 0 10% 0 0;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+    }
+    li{
+        list-style-type: none;
+        padding: 0 20px;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+        letter-spacing: 1px;
+    }
+
+    h1{
+        font-size: 3.5em;
+        font-weight: bold;
+        margin: 0;
+    }
+    h3{
+        margin-top: 0;
+        font-weight: normal;
+    }
+    .input-text{
+        width: calc(100% - 32px);
+        border: solid 1px #746e6a;
+        padding: 15px;
+        color: grey;
+    }
+    #sign-up-btn{
+        width: 100%;
+        background: #2196F3;
+        padding: 15px;
+        color: white;
+        border: none;
+        font-size: 16px;
+        border-radius: 0 0 5px 5px;
+        cursor: pointer;
+    }
+    .terms{
+        margin-top: 25px;
+    }
+    .caption{
+        margin-top: 15px;
+        font-size: 18px;
+        color: #c0c0c1;
+    }
+    .txt-md{
+        font-size: 18px;
+    }
+    .txt-sm{
+        font-size: 14px;
+        color: #c0c0c1;
+    }
+    .terms-link{
+        position: relative;
+        top: 5px;
+    }
+    .first-field{
+        border-radius: 5px 5px 0 0;
+    }
+    footer{
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+    }
+
+</style>
+<body>
+    <header class="flex-box">
+        <div>logo</div>
+        <nav>
+            <ul class="flex-box">
+                <li>
+                    <a class="txt-md" href="/about">About</a>
+                </li>
+                <li>
+                    <a class="txt-md" href="/integrations">Integrations</a>
+                </li>
+                <li>
+                    <a class="txt-md" href="/pricing">Pricing</a>
+                </li>
+                <li>
+                    <a class="txt-md" href="/contacts">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+        <div>
+            menu
+        </div>
+    </header>
+    <div class="main-content flex-box">
+        <div class="flex-box">
+            <section class="left-content">
+                <h1>Simple Way to Organize Your Inspirations</h1>
+                <div class="caption">I think what motivates people is not great hate, but great love for other people.</div>
+            </section>
+            <section class="right-content">
+                <h3 class="form-title">SIGN UP FOR FREE</h3>
+                <form>
+                    <div>
+                        <input class="input-text txt-md first-field" type="text" placeholder="Name" name="name"/>
+                    </div>
+                    <div>
+                        <input class="input-text txt-md" type="text" placeholder="E-mail" name="email"/>
+                    </div>
+                    <div>
+                        <input class="input-text txt-md" type="text" placeholder="Password" name="password"/>
+                    </div>
+                    <div>
+                        <button id="sign-up-btn">Sign up ></button>
+                    </div>
+                </form>
+                <div class="terms txt-sm">
+                    <div>By clicking "Sign up" I agree to our</div>
+                    <a class="terms-link" href="/terms">Terms of Service.</a>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer class="flex-box">
+        <div class="txt-sm">&copy; 2016 Stamp, All Rights Reserved</div>
+        <div>
+            <ul class="flex-box">
+                <li>
+                    <a href="/Contact">Contact</a>
+                </li>
+                <li>
+                    <a href="/Help">Help</a>
+                </li>
+                <li>
+                    <a href="/Terms">Terms of Use</a>
+                </li>
+                <li>
+                    <a href="/Privacy_Policy">Privacy Policy</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
